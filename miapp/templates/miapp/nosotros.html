@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nostoros</title>
+    <link rel="stylesheet" href= "{% static "nosotros.css"%}"> 
+</head>
+<body>
+    <h1 class="empresa">SAMSUNG</h1>
+    <nav>
+        <button><a href="{% url 'index' %}">Pagina Principal</a></button>
+        <button><a href="{% url 'celulares' %}">Celulares</a></button>
+        <button><a href="{% url 'soporte' %}">Soporte</a></button>
+        <button><a href="{% url 'nosotros' %}">Sobre Nostoros</a></button>
+
+    </nav>
+    <br>
+
+    <h1>Sobre Nosotros</h1>
+
+    <div class="nosotros">
+        <h2>Nuestra misión y nuestros valores</h2>
+        <p>Nuestra promesa consiste en trabajar con responsabilidad como una empresa lider a nivel mundial.</p>
+        <img width="400px" src="/static/img/nosotros1.png" alt="Samsung">
+    </div>
+    
+    <br>
+    <div class="contenido">
+        <p>Samsung se compromete a cumplir con las leyes y las regulaciones locales, así como a aplicar un código de conducta estricto y global para todos los empleados. Cree que la gestión ética no solo es una herramienta para responder a los cambios rápidos en el entorno empresarial a nivel mundial, sino también una forma de generar confianza con sus diversas partes interesadas, lo que incluye clientes, accionistas, empleados, socios comerciales y comunidades locales. Samsung tiene el objetivo de convertirse en una de las empresas más éticas del mundo, por eso continúa capacitando a sus empleados y operando sistemas de monitoreo, mientras pone en práctica una gestión corporativa justa y transparente.</p>
+    </div>
+
+
+    <div class="info-mision">
+        <h2>Nuestra misión y nuestro enfoque</h2>
+        <p>Samsung sigue una filosofía empresarial simple: dedicar su talento y tecnología a crear productos y servicios superiores que contribuyan a una mejor sociedad global. Para lograrlo, establece un alto valor en sus personas y tecnologías.</p>
+        <img width="400px" src="/static/img/nosotros2.jpeg" alt="">
+    </div>
+
+    <div class="valores">
+        <h2>Los valores que definen el espiritu de Samsung </h2>
+        <p>Samsung cree que guiarse por valores sólidos es la clave para un buen negocio. Por este motivo, estos valores fundamentales, junto con un código de conducta riguroso, representan el núcleo de cada decisión que toma la empresa.</p>
+        <img width="400px" src="/static/img/nosotros4.jpeg" alt="">
+    </div>
+
+    <div class="principios">
+        <h2>Cinco principios empresariales de Samsung</h2>
+        <p>En una expresión de su compromiso con la responsabilidad social corporativa como empresa líder en el mundo, Samsung Electronics anunció los “cinco principios empresariales de Samsung” en 2005. Los principios sirven como base para su código de conducta global de acuerdo con los estándares legales y éticos, y con el cumplimiento de sus responsabilidades sociales corporativas.</p>
+        <img width="400px" src="/static/img/nosotros3.jpeg" alt="">
+    </div>
+
+    <footer>
+        <h2>Contactanos</h2>
+        <p>Hábla con nuestros expertos Samsung. </p>
+        <button><a href="Contactanos.html">Mas Informacion</a></button>
+        <p>Sitio elaborado por: </p>
+        <ul>
+            <li>Jocelyn Garcia</li>
+            <li>Sharon Covarrubias</li>
+            <li>Miguel Ramirez</li>
+            <li>Demian Uriegas</li>
+            <li>Adrian Gomez</li>
+        </ul>
+        <p class="fin">© 2025 Samsung Electronics. Todos los derechos reservados.</p>
+
+    </footer>
+</body>
+</html>

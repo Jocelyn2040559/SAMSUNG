@@ -1,0 +1,166 @@
+.empresa {
+    color: #1e90ff;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  border-bottom: 2px solid #1e90ff;
+}
+
+nav button {
+  background-color: #1e90ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background-color: #0d6efd;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1  {
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto {
+    max-width: 400px;
+    font-family: Arial;
+    
+}
+
+.titulo2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.seccion1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    font-family: Arial;
+}
+
+.opcion {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid;
+}
+
+.seccion2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(162, 163, 180);
+    color: white;
+    border-radius: 30px;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f111a;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "✔️ ";
+  color: #1e90ff;
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #1e90ff;
+}
+
+footer h2 {
+  color: #1e90ff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer button {
+  background-color: #1e90ff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer button:hover {
+  background-color: #0d6efd;
+}
+
+.fin {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+

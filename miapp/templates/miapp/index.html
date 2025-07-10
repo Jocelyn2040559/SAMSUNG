@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nostoros</title>
+    <link rel="stylesheet" href= "{% static "inicio.css"%}"> 
+ </head>
+<body>
+    <h1 class="empresa">SAMSUNG</h1>
+    <nav>
+        <button><a href="{% url 'index' %}">Pagina Principal</a></button>
+        <button><a href="{% url 'celulares' %}">Celulares</a></button>
+        <button><a href="{% url 'soporte' %}">Soporte</a></button>
+        <button><a href="{% url 'nosotros' %}">Sobre Nostoros</a></button>
+    </nav><title>Samsung - Inicio</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a Samsung</h1>
+    <p>Innovación para ti</p>
+  </header>
+
+  <section>
+    <h2>Presentación de la empresa</h2>
+    <p>Samsung es una empresa líder en tecnología, enfocada en mejorar la vida de las personas a través de innovación constante. Nos especializamos en productos como smartphones, televisores, electrodomésticos y más.</p>
+  </section>
+
+  <section>
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="/static/img/s24plus.jpg">
+        <p>Galaxy S24+</p>
+      </div>
+      <div class="producto">
+        <img src="/static/img/pantallaCristal.jpg">
+        <p>Pantalla Cristal 4K</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Promociones y Novedades</h2>
+    <ul>
+      <li>🔥 ¡Llévate un Galaxy S24+ con 20% de descuento solo este mes!</li>
+      <li>📺 Promoción en Pantalla Cristal 4K: hasta 12 meses sin intereses.</li>
+      <li>🧼 Nuevos electrodomésticos con tecnología inteligente ya disponibles.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <h2>Contactanos</h2>
+    <p>Hábla con nuestros expertos Samsung. </p>
+    <button><a href="{% url 'contactanos' %}">Mas Informacion</a></button>
+    <p>Sitio elaborado por: </p>
+    <ul>
+        <li>Jocelyn Garcia</li>
+        <li>Sharon Covarrubias</li>
+        <li>Miguel Ramirez</li>
+        <li>Demian Uriegas</li>
+        <li>Adrian Gomez</li>
+    </ul>
+    <p class="fin">© 2025 Samsung Electronics. Todos los derechos reservados.</p>
+
+</footer>
+
+</body>
+</html>

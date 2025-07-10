@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte SAMSUNG</title>
+    <link rel="stylesheet" href= "{% static "soporte.css"%}"> 
+</head>
+<body>
+    <h1 class="empresa">SAMSUNG</h1>
+    <nav>
+        <button><a href="{% url 'index' %}">Pagina Principal</a></button>
+        <button><a href="{% url 'celulares' %}">Celulares</a></button>
+        <button><a href="{% url 'soporte' %}">Soporte</a></button>
+        <button><a href="{% url 'nosotros' %}">Sobre Nostoros</a></button>
+
+    </nav>
+    <br>
+    <h1>Soporte SAMSUNG</h1>
+    <img src="/static/img/Soporte.avif" alt="samsung">
+    <br>
+
+    <div class="video">
+        <video style="width: 640px; height: 360px ;" controls src="https://videos.pexels.com/video-files/8201298/uhd_25fps.mp4">Soporte SAMSUNG</video>
+
+        <div class="texto">
+            <p class="p">Ya sea la reparación de un producto, solo asistencia y algún consejo. Hay más de 100 centros de asistencia autorizados en todo México que pueden ayudarte. Todos están plenamente capacitados y utilizan piezas originales de Samsung en todas las reparaciones. Selecciona tu tipo de producto a continuación para ver cómo puedes obtener el soporte técnico que necesitas.</p>
+        </div>
+    </div>
+    <hr>
+    <h2 class="titulo2">¿Que producto tengo?</h2>
+
+    <div class="seccion1">
+        <div class="opcion">
+            <img src="/static/img/soporte1.jpg" alt="Celulares">
+            <h3>Smartphone, tablet o dispositivo portátil</h3>
+            <p> Los centros de soporte de Samsung en todo México pueden ayudarlo con todo lo que necesite, desde una pantalla rota hasta la transferencia de datos. Visita tu centro de servicio Samsung más cercano o llámanos hoy. <br><br>Para garantizar la seguridad de su información personal, recuerde activar el <strong>Modo Mantenimiento</strong> antes de enviar su teléfono a reparar. Cuando el <strong>Modo Mantenimiento</strong> está habilitado, el acceso a los datos del cliente dentro del dispositivo está restringido. </p>
+        </div>
+        <div class="opcion">
+            <img src="/static/img/soporte2.jpg" alt="Televisor">
+            <h3>Televisor de 40" o de menor tamaño</h3>
+            <p>Si tienes uno de nuestros televisores pequeños, la manera más rápida para que podemos ayudarte es que te dirijas a uno de los centros de servicio autorizados de la siguiente lista.</p>
+        </div>
+        <div class="opcion">
+            <img src="/static/img/soporte3.jpg" alt="otros">
+            <h3>Otros productos</h3>
+            <p>Si requieres ayuda adicional, llámanos al 800 726 7864 y con gusto te orientaremos sobre los siguientes pasos a seguir. <br><br><strong>Importante:</strong> Durante la visita de nuestro centro de servicio autorizado a tu domicilio, se verificará si el equipo cuenta con garantía válida. Si se determina que el problema no corresponde a un defecto de fábrica, el técnico podrá ofrecerte un presupuesto para la reparación, si así lo deseas. En caso de no encontrarse ninguna falla o daño, el centro de servicio autorizado podría aplicar un cargo por la visita.</p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="seccion2">
+        <div class="formulario">
+            <h2 style="text-align: center; color: black;">Soporte</h2>
+            <p style="color: black;">Envianos tu informacion a traves de la siguiente encuesta para dar solucion a tu problema</p>
+            <div>
+                <label style="color: black;" for="nombre"><b>Nombre Completo:</b> </label>
+                <input type="text" name="nombre">
+            </div>
+            <div>
+                <label style="color: black;" for="correo"><b>Correo:</b> </label>
+                <input type="text" name="correo">
+            </div>
+            <div>
+                <label style="color: black;" for="telefono"><b>Telefono:</b> </label>
+                <input type="text" name="telefono">
+            </div>
+            <div>
+                <label style="color: black;" for="opciones"><b>Cual es tu producto:</b></label>
+                <select name="opcion" id="opc">
+                    <option value="1">Ninguno</option>
+                    <option value="2">Smartphone</option>
+                    <option value="3">Tablet</option>
+                    <option value="4">Dispositivo portátil</option>
+                    <option value="5">Televisor</option>
+                    <option value="6">Otros productos</option>
+                </select>
+            </div>
+            <div>
+                <label style="color: black;" for="descripcion"><b>Marca de tu dispositivo:</b> </label>
+                <input type="text" name="descripcion">
+            </div>
+            <div>
+                <label style="color: black;" for="desc2"><b>Cual es tu problema con tu dispositivo:</b> </label>
+                <input type="text" name="desc2">
+            </div>
+            <div style="text-align: center;">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+
+    <footer>
+        <h2>Contactanos</h2>
+        <p>Hábla con nuestros expertos Samsung. </p>
+        <button><a href="Contactanos.html">Mas Informacion</a></button>
+        <p>Sitio elaborado por: </p>
+        <ul>
+            <li>Jocelyn Garcia</li>
+            <li>Sharon Covarrubias</li>
+            <li>Miguel Ramirez</li>
+            <li>Demian Uriegas</li>
+            <li>Adrian Gomez</li>
+        </ul>
+        <p class="fin">© 2025 Samsung Electronics. Todos los derechos reservados.</p>
+
+    </footer>
+</body>
+</html>
