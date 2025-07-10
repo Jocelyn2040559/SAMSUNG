@@ -51,46 +51,61 @@
     <hr>
 
     <div class="seccion2">
-        <div class="formulario">
-            <h2 style="text-align: center; color: black;">Soporte</h2>
-            <p style="color: black;">Envianos tu informacion a traves de la siguiente encuesta para dar solucion a tu problema</p>
-            <div>
-                <label style="color: black;" for="nombre"><b>Nombre Completo:</b> </label>
-                <input type="text" name="nombre">
+        <form id="miFormulario" method="post">
+            {% csrf_token %}
+            <div class="formulario">
+                <h2 style="text-align: center; color: black;">Soporte</h2>
+                <p style="color: black;">Envianos tu informacion a traves de la siguiente encuesta para dar solucion a tu problema</p>
+                <div>
+                    <label style="color: black;" for="nombre"><b>Nombre Completo:</b> </label>
+                    <input type="text" name="nombre">
+                </div>
+                <div>
+                    <label style="color: black;" for="correo"><b>Correo:</b> </label>
+                    <input type="text" name="correo">
+                </div>
+                <div>
+                    <label style="color: black;" for="telefono"><b>Telefono:</b> </label>
+                    <input type="text" name="telefono">
+                </div>
+                <div>
+                    <label style="color: black;" for="opciones"><b>Cual es tu producto:</b></label>
+                    <select name="opcion" id="opc">
+                        <option value="1">Ninguno</option>
+                        <option value="2">Smartphone</option>
+                        <option value="3">Tablet</option>
+                        <option value="4">Dispositivo portátil</option>
+                        <option value="5">Televisor</option>
+                        <option value="6">Otros productos</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="color: black;" for="descripcion"><b>Marca de tu dispositivo:</b> </label>
+                    <input type="text" name="descripcion">
+                </div>
+                <div>
+                    <label style="color: black;" for="desc2"><b>Cual es tu problema con tu dispositivo:</b> </label>
+                    <input type="text" name="desc2">
+                </div>
+                <div style="text-align: center;">
+                    <input type="submit" value="Enviar">
+                </div>
             </div>
-            <div>
-                <label style="color: black;" for="correo"><b>Correo:</b> </label>
-                <input type="text" name="correo">
-            </div>
-            <div>
-                <label style="color: black;" for="telefono"><b>Telefono:</b> </label>
-                <input type="text" name="telefono">
-            </div>
-            <div>
-                <label style="color: black;" for="opciones"><b>Cual es tu producto:</b></label>
-                <select name="opcion" id="opc">
-                    <option value="1">Ninguno</option>
-                    <option value="2">Smartphone</option>
-                    <option value="3">Tablet</option>
-                    <option value="4">Dispositivo portátil</option>
-                    <option value="5">Televisor</option>
-                    <option value="6">Otros productos</option>
-                </select>
-            </div>
-            <div>
-                <label style="color: black;" for="descripcion"><b>Marca de tu dispositivo:</b> </label>
-                <input type="text" name="descripcion">
-            </div>
-            <div>
-                <label style="color: black;" for="desc2"><b>Cual es tu problema con tu dispositivo:</b> </label>
-                <input type="text" name="desc2">
-            </div>
-            <div style="text-align: center;">
-                <input type="submit" value="Enviar">
-            </div>
-        </div>
+        </form>
     </div>
-    
+    <div id="mensaje-mantenimiento">El formulario está en mantenimiento.</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("miFormulario");
+            const mensaje = document.getElementById("mensaje-mantenimiento");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Detiene el envío del formulario
+                mensaje.style.display = "block"; // Muestra el recuadro naranja
+            });
+        });
+  </script>
     <hr>
 
     <footer>
