@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.empresa {
+    background-color: #1428a0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px 0;
+}
+#f4f4f4
+nav button {
+    background-color: #ffffff;
+    border: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #dcdcdc;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: #1428a0;
+    text-align: center;
+}
+
+div {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "✔️ ";
+  color: #1e90ff;
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #1e90ff;
+}
+
+footer h2 {
+  color: #1e90ff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer button {
+  background-color: #1e90ff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer button:hover {
+  background-color: #0d6efd;
+}
+
+.fin {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
